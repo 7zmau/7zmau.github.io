@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>7zmau</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        
+        <div class="nav">
+            <ul>
+                <li class="home active"><a href="index.html">:)</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        
+        <br>
+        
+        <div id="quoteData"></div>
+        
+        <div class="links">
+            <div><a href="https://www.twitter.com/7zmau">Twitter</a></div>
+            <div><a href="https://www.instagram.com/prinston.jpg">Instagram</a></div>
+            <div><a href="https://www.github.com/7zmau">GitHub</a></div>
+            <div><a href="mailto:princeton4d@gmail.com">princeton4d@gmail.com</a></div>
+        </div>
+    </div>
+
+
+    <script id="quote-template" type="text/x-handlebars-template">
+        <h3>Favourite {{ name }} quotes:</h3>
+        <ul>
+            {{# if quotes }}
+                {{# each quotes }}
+                <li>{{ this.quote }}</li>
+                {{/ each }}
+            {{ else }}
+                <li>None</li>
+            {{/ if }}
+        </ul>
+    </script>
+
+    <script type="text/javascript">
+        var quoteInfo = document.getElementById("quote-template").innerHTML;
+        var template = Handlebars.compile(quoteInfo);
+        var quoteData = template({
+            name: "Princeton Gomes",
+            quotes: [
+                
+                { quote: "I eat therefore I survive." },
+                { quote: "Don't take life too seriously." },
+                { quote: "There's never too much jam in my bread."},
+                { quote: "Did someone say fried fish!"},
+                { quote: "I am working."}
+
+            ]
+        });
+        document.getElementById("quoteData").innerHTML = quoteData;
+    </script>
+</body>
+</html>

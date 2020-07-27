@@ -1,0 +1,44 @@
+body{
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 2.7em;
+}
+.mainContainer{
+    width:90%;
+    margin:25px auto;
+    padding:10px;
+}
+.nav ul{
+    padding-top:;
+    padding-right:;
+}
+.nav li{
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 0.37em;
+    float: left;
+    list-style: none;
+    padding-right: 17px;
+    margin-right:17px;
+}
+.nav a{
+    color: #000;
+    text-decoration: none;
+}
+.nav .home {
+    margin-right: 40%;
+    padding-right: 14px:
+}
+.active {
+    font-style: italic;
+    font-weight: bold;
+}
+.links {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 0.37em;
+}
+.links a{
+    color: blue;
+    text-decoration: underline;
+}
+.links div{
+    margin-bottom: 4px;
+}
