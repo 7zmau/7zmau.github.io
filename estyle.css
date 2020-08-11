@@ -16,7 +16,7 @@ body {
 }
 .nav {
     display: grid;
-    grid-template-columns: 2fr 1.2fr 1.2fr;
+    grid-template-columns: 50% 1.5fr 1.5fr;
     font-family: 'Oxygen Mono', monospace;
     font-size: 14px;
     margin-top: 17px;
