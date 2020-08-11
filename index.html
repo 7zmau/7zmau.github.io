@@ -1,66 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-UK">
 <head>
     <title>7zmau</title>
-    <meta charset="utf-8">
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The RewindTime blog!">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mainContainer">
+    <div class="container">
         
+
         <div class="nav">
-            <ul>
-                <li class="home active"><a href="https://7zmau.github.io">:)</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+        
+            <div class="home"> <div class="active nav-btn"><a href="index.html">Home</a></div> </div>
+            <div></div>
+            <div></div>
+            <div> <div class="nav-btn"><a href="projects.html">Projects</a></div> </div>
+            <div> <div class="nav-btn"><a href="about.html">About</a></div> </div>
+        
         </div>
         
-        <br>
         
-        <div id="quoteData"></div>
+        <div id="content">
         
+            <div class="blank"></div>
+            
+            <section>
+                <h1 class="home-title">RewindTime</h1>
+                <p>Hi. My name is Princeton Gomes. Welcome to my blog - <i>RewindTime</i>. Here I rewind the clock and reflect on the things which I've learned.</p>
+                <p>I don't have any articles up yet. Stay tuned.</p>
+            </section>
+        
+        </div>
+        
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+
         <div class="links">
-            <div><a href="https://www.twitter.com/7zmau">Twitter</a></div>
-            <div><a href="https://www.instagram.com/prinston.jpg">Instagram</a></div>
-            <div><a href="https://www.github.com/7zmau">GitHub</a></div>
-            <div><a href="mailto:princeton4d@gmail.com">princeton4d@gmail.com</a></div>
+            <div><a href="https://www.twitter.com/7zmau" target="_blank" rel="noopener noreferrer">Twitter</a></div>
+            <div><a href="https://www.instagram.com/prinston.jpg" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            <div><a href="https://www.github.com/7zmau" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+            <div><a href="mailto:princeton4d@gmail.com" target="_blank" rel="noopener noreferrer">princeton4d@gmail.com</a></div>
         </div>
     </div>
 
 
-    <script id="quote-template" type="text/x-handlebars-template">
-        <h3>Favourite {{ name }} quotes:</h3>
-        <ul>
-            {{# if quotes }}
-                {{# each quotes }}
-                <li>{{ this.quote }}</li>
-                {{/ each }}
-            {{ else }}
-                <li>None</li>
-            {{/ if }}
-        </ul>
-    </script>
-
-    <script type="text/javascript">
-        var quoteInfo = document.getElementById("quote-template").innerHTML;
-        var template = Handlebars.compile(quoteInfo);
-        var quoteData = template({
-            name: "Princeton Gomes",
-            quotes: [
-                
-                { quote: "I eat therefore I survive." },
-                { quote: "Don't take life too seriously." },
-                { quote: "There's never too much jam in my bread."},
-                { quote: "Did someone say fried fish!"},
-                { quote: "I am working."}
-
-            ]
-        });
-        document.getElementById("quoteData").innerHTML = quoteData;
-    </script>
 </body>
 </html>
