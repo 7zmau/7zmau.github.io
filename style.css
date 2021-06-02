@@ -50,11 +50,21 @@ body {
     font-size: 13px;
 }
 .links a {
-    color: blue;
+    color: #343a40;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #212529;
     text-decoration: underline;
 }
 .links div {
     margin-bottom: 4px;
+}
+.main-links a {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 13px;
+    color: blue;
+    text-decoration: underline;
 }
 .title-link {
     color: #000;
