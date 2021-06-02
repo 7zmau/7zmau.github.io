@@ -50,11 +50,10 @@ body {
     font-size: 13px;
 }
 .links a {
-    color: #2a6f97;
+    color: blue;
     text-decoration: none;
 }
 .links a:hover{
-    color: #014f86;
     text-decoration: underline;
 }
 .links div {
